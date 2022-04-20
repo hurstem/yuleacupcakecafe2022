@@ -1,0 +1,313 @@
+@charset "UTF-8";
+/*RESET*/
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126License: none (public domain)*/
+ html, body, div, span, applet, object, h1, h2, h3, h4, h5, h6, p, pre, a, abbr, acronym, big, del, dfn, img, ins, kbd, q, s, samp, small, strike, tt, var, b, u, i, center, dl, dt, dd, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, footer, header, hgroup, menu, nav, output, ruby, summary, time, mark, audio, video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav {
+     display: block;
+}
+ body {
+     line-height: 1;
+     display: flex;
+     flex-direction: column;
+}
+ q {
+     quotes: none;
+}
+ blockquote:before, blockquote:after, q:before, q:after {
+     content: "";
+     content: none;
+}
+ table {
+     border-collapse: collapse;
+     border-spacing: 0;
+}
+ .row{
+     margin: 0;
+}
+/*---------------------------------------------------------*/
+/*CSS*/
+.main{
+	width: 80%;
+	margin: 0 auto;
+}
+ #container{
+	 margin: 2rem auto;
+     flex: 1 0 auto;
+}
+ html, body {
+     height: 100%;
+}
+/*---------------------------------------------------------*/
+/*LINKS*/
+ a{
+     font-family: futura-pt-condensed,sans-serif;
+     font-weight: 400;
+     font-style: normal;
+     font-size: 30px;
+     margin: 0rem 0rem .5rem;
+     color: #2A2927;
+     text-decoration: none;
+}
+ a h1:hover{
+     color: #FFF;
+}
+/*---------------------------------------------------------*/
+/*TYPOGRAPHY*/
+ h1, h2, h3, h4, h5, h6{
+     font-family: bebas-neue-rounded, sans-serif;
+     font-weight: 400;
+     font-style: normal;
+     color: #2A2927;
+     margin: 0rem 0rem .5rem;
+}
+ h1{
+     font-size: 60px;
+}
+ h2{
+     font-size: 50px;
+}
+ h3{
+     font-size: 40px;
+}
+ h4{
+     font-family: futura-pt-condensed,sans-serif;
+     font-weight: 700;
+     font-style: normal;
+     font-size: 35px;
+}
+ h5{
+     font-family: futura-pt-condensed,sans-serif;
+     font-weight: 700;
+     font-style: normal;
+     font-size: 30px;
+}
+ h6{
+     font-family: futura-pt-condensed,sans-serif;
+     font-weight: 700;
+     font-style: normal;
+     font-size: 25px;
+}
+ p{
+     font-family: futura-pt-condensed,sans-serif;
+     font-weight: 400;
+     font-style: normal;
+     color: #2A2927;
+     font-size: 25px;
+     line-height: 1.25;
+     margin: 0rem 0rem .5rem 0rem;
+}
+ label{
+     font-family: futura-pt-condensed,sans-serif;
+     font-weight: 400;
+     font-style: normal;
+     color: #2A2927;
+     font-size: 25px;
+     line-height: 1.25;
+     margin: 0rem 0rem .5rem 0rem;
+}
+ small{
+     font-family: futura-pt-condensed,sans-serif;
+     font-weight: 400;
+     font-style: normal;
+     color: #2A2927;
+}
+/*---------------------------------------------------------*/
+/*BUTTONS*/
+ .btn{
+     font-family: futura-pt-condensed,sans-serif;
+     font-weight: 400;
+     font-style: normal;
+     background-color: #E12D3B;
+     border: none;
+     color: #FFF;
+}
+ .btn:hover{
+     background-color: #F5949C;
+}
+ .submit-btn{
+     width: 10rem;
+     font-size: 25px;
+}
+/* Checkbox element, when checked */
+ input[type="checkbox"]:checked {
+}
+/*---------------------------------------------------------*/
+/*NAV*/
+.navbar{
+     display: none;
+}
+ .nav-link.active{
+     background-color: #E12D3B;
+     color: #FFF;
+}
+ #nav{
+     padding: 2rem 2rem;
+     background-color: #F5949C;
+}
+ .nav-link{
+     font-family: futura-pt-condensed, sans-serif;
+     font-weight: 700;
+     font-style: normal;
+     font-size: 30px;
+     display: inline-block;
+     margin-top: 1rem;
+     padding: 0rem 1rem;
+     color: #2A2927;
+}
+ .nav-link:hover{
+     background-color: #9CE6D8;
+     color: #2A2927;
+}
+/*---------------------------------------------------------*/
+/*CAROUSEL*/
+ .carousel img{
+     margin: 2rem 1rem;
+     height: 50rem;
+     object-fit: contain;
+}
+ .carousel{
+     margin-bottom: 4rem;
+}
+/*---------------------------------------------------------*/
+/*ABOUT PAGE*/
+ .about-mobile{
+     display: none;
+}
+#about-para{
+	display: none;
+}
+ .about{
+     margin-bottom: 2rem;
+}
+ #services-box{
+     margin: 0rem 0rem 4rem 0rem;
+}
+ .services-info{
+	 margin: 2rem auto;
+     padding-right: 0;
+     --bs-gutter-x: 0;
+}
+ .services-paragraph{
+     padding-right: 3rem;
+}
+ #services-latte{
+     height: 40rem;
+     object-fit: cover;
+}
+/*---------------------------------------------------------*/
+/*JUMBOTRON*/
+ .jumbotron{
+     background-image: url(https://images.unsplash.com/photo-1486427944299-d1955d23e34d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y3VwY2FrZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: 100%;
+     padding: 1rem;
+	 margin: 2rem auto;
+     height: 40rem;
+	 width: 75%;
+}
+ hr{
+     border: 1px solid #2A2927;
+}
+/*---------------------------------------------------------*/
+/*GALLERY DIVIDER*/
+ .galleryDivider{
+     padding: .5rem;
+     background-color: #F5949C;
+}
+/*---------------------------------------------------------*/
+/*CARDS*/
+ figure{
+     width: 100%;
+}
+ .figure-caption{
+     display: none;
+}
+ #mobile-cream-filled{
+     display: none;
+}
+ .gallery-cards-mobile{
+     display: none;
+}
+ .gallery-cards{
+	 width: 78%;
+	 margin: 2rem auto;
+}
+ .card-img{
+     height: 35rem;
+     object-fit: cover;
+     margin-bottom: .5rem;
+}
+/*---------------------------------------------------------*/
+/*FOOTER*/
+ .active{
+     color: #FFF;
+}
+ #mobile-footer{
+     display: none;
+}
+ footer{
+     margin-top: 2rem;
+     padding: 2rem;
+     background-color: #F5949C;
+     flex-shrink: 0;
+}
+ .footer-nav{
+     text-decoration: none;
+     font-size: 25px;
+}
+ .footer-nav:hover{
+     color: #FFF;
+}
+ .footer-quote{
+     font-family: futura-pt-condensed,sans-serif;
+     font-weight: 700;
+     font-style: italic;
+     font-size: 50px;
+     text-align: center;
+}
+/*---------------------------------------------------------*/
+/*CATERING*/
+#catering-blurb{
+	margin-bottom: 2rem;
+}
+/*---------------------------------------------------------*/
+/*MENU*/
+ .card-Btm img{
+     margin-bottom: .5rem;
+     height: 50rem;
+     object-fit: cover;
+}
+ .card-Top img{
+     margin-bottom: .5rem;
+     height: 30rem;
+     object-fit: cover;
+}
+ .menu-title{
+     padding: 2rem;
+     margin: 2rem 0rem;
+     background-color: #CEF2EA;
+}
+ .details-img{
+     height: 25rem;
+     object-fit: cover;
+     margin-bottom: .5rem;
+}
+/*---------------------------------------------------------*/
+/*FORMS*/
+ .form-group{
+     margin: 1rem 0rem;
+}
+/*---------------------------------------------------------*/
+/*CONTACT*/
+#mobile-contact-form{
+	display: none;
+}
