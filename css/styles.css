@@ -1,0 +1,385 @@
+@charset "UTF-8";
+/*RESET*/
+ @font-face {
+     font-family: myfont;
+     src: url(../fonts/ufonts.com_tw-cen-mt.ttf);
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126License: none (public domain)*/
+ html, body, div, span, applet, object, h1, h2, h3, h4, h5, h6, p, pre, a, abbr, acronym, big, del, dfn, img, ins, kbd, q, s, samp, small, strike, tt, var, b, u, i, center, dl, dt, dd, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, footer, header, hgroup, menu, nav, output, ruby, summary, time, mark, audio, video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav {
+     display: block;
+}
+ body {
+     line-height: 1;
+     display: flex;
+     flex-direction: column;
+     background-color: #e1f8f3;
+}
+ q {
+     quotes: none;
+}
+ blockquote:before, blockquote:after, q:before, q:after {
+     content: "";
+     content: none;
+}
+ table {
+     border-collapse: collapse;
+     border-spacing: 0;
+}
+/*COLORS*/
+/* #f6c0c4 #f0969d #e12d3b #2A2927 
+/*------*/
+/* #e1f8f3 #cef3ec #9ce6d8 */
+/*-----------LINKS-----------*/
+ a{
+     font-family: futura-pt-condensed, sans-serif;
+     font-weight: 400;
+     font-style: normal;
+	 font-size: 20px;
+	 text-decoration: none;
+	 color: #2A2927;
+	 text-transform: capitalize;
+}
+/*-----------TYPOGRAPHY-----------*/
+ h1, h2, h3{
+     font-family: bebas-neue-rounded, sans-serif;
+     font-weight: 400;
+     font-style: normal;
+     color: #2A2927;
+     margin: 1rem 0rem;
+}
+ h4, h5, h6{
+     font-family: futura-pt-condensed, sans-serif;
+     font-weight: 700;
+     font-style: normal;
+     color: #2A2927;
+     margin: 1rem 0rem;
+}
+ h1{
+     font-size: 60px;
+}
+ h2{
+     font-size: 55px;
+}
+ h3{
+     font-size: 50px;
+}
+ h4{
+     font-size: 45px;
+}
+ h5{
+     font-size: 40px;
+}
+ h6{
+     font-size: 35px;
+}
+ p{
+     font-family: futura-pt-condensed, sans-serif;
+     font-weight: 500;
+     font-style: normal;
+     font-size: 22px;
+     margin: 1rem 0rem;
+     color: #2A2927;
+     line-height: 1.5;
+}
+small{
+     color: #e12d3b;
+	font-weight: 400;
+	font-size: 18px;
+}
+i{
+     color: #e12d3b;
+	font-weight: 400;
+	font-style: italic;
+}
+/*-----------BUTTONS-----------*/
+ .btn{
+     background-color: #9ce6d8;
+     font-size: 20px;
+     text-transform: uppercase;
+}
+ .btn:hover{
+     background-color: #e12d3b;
+     color: #FFF;
+     font-weight: 600;
+}
+/*-----------HEADER-----------*/
+#hero-area {
+  position: relative;
+}
+#hero-area img{
+	width: 100%;
+	height: 15rem;
+	object-fit: cover;
+}
+/*-----------NAV-----------*/
+nav {
+  z-index: 99999;
+  width: 100%;
+	height: 100%;
+}
+.navbar-header{	
+	display: inline-block;
+	vertical-align: middle;
+}
+.navbar-brand h1:hover{
+	color: #e12d3b;
+}
+nav .block {
+  margin-top: -105px;
+	padding-bottom: 2rem;
+  background: #e1f8f3;
+  opacity: .85;
+}
+nav img{
+	height: 10rem;
+}
+.nav-item{
+	 display: inline-block;
+}
+ .nav-link{
+	 display: inline-block;
+     color: #2A2927;
+}
+ .nav-link:hover{
+	 border-radius: .5rem;
+     color: #FFF;
+     background-color: #e12d3b;
+	 font-weight: 500;
+}
+ .nav-link.active{
+	 border-radius: .5rem;
+	 background-color: #9ce6d8;
+     font-weight: 600;
+}
+
+/*
+ nav{
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     font-size: 2.5rem;
+     margin: 0rem auto;
+     width: 80%;
+     z-index: 101;
+     background-color: #9ce6d8;
+     border-radius: 1rem 1rem 0rem 0rem;
+}
+*/
+
+/*-----------CONTAINER-----------*/
+ #container{
+     width: 90%;
+     margin: 0rem auto 4rem;
+     padding: 2rem;
+     border-radius: 1rem;
+     background-color: #FFF;
+	 -webkit-box-shadow: 0px 0px 5px 0px #9ce6d8; 
+box-shadow: 0px 0px 5px 0px #9ce6d8;
+}
+ .divider{
+     background-color: #f0969d;
+     border-radius: 1rem;
+     padding: .5rem;
+     margin: 2rem 0rem;
+}
+ .divider h2{
+     margin: 0;
+}
+/*-----------CARDS-----------*/
+ .card{
+     border: none;
+}
+ .card img{
+     height: 18rem;
+     width: 30rem;
+     object-fit: cover;
+     border-radius: 1rem 0rem 0rem 1rem;
+}
+ .card-body{
+     padding: 0rem 1rem;
+}
+/*-----------FOOTER-----------*/
+ footer{
+     margin-top: 2rem;
+}
+ hr {
+     font-family: Arial, sans-serif;
+    /* choose the font you like */
+     text-align: center;
+    /* horizontal centering */
+     line-height: .125rem;
+    /* vertical centering */
+     font-size: 3rem;
+    /* choose font size you like */
+     border-width: 2px;
+    /* top and bottom borders */
+     border-style: solid;
+     border-radius: .25rem;
+     border-color: #e12d3b;
+     margin: 3rem auto 1.5rem;
+    /* 20px space above/below, 10px left/right */
+     overflow: visible;
+     opacity: 100;
+     background-color: #e12d3b;
+    /* ensure 1px gap between borders */
+     -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+     -ms-box-sizing: content-box;
+     -o-box-sizing: content-box;
+     box-sizing: content-box;
+}
+ hr:after {
+     background-image: url('file:///Users/ehurst/Desktop/siteOne/imgs/logos/Home%20Button.png');
+     background-repeat: no-repeat;
+     background-size: 2.5rem;
+     background-position: center;
+    /* section sign */
+     content:"";
+     color: #2A2927;
+     display: inline;
+    /* for vertical centering and background knockout */
+     background-color: #FFF;
+    /* same as background color */
+     padding: 0 0.5em;
+    /* size of background color knockout */
+}
+/*-----------ABOUT PAGE-----------*/
+ .carousel-item img{
+	 border-radius: 1rem;
+     height: 45rem;
+	 object-fit: cover;
+	 object-position: right center;
+}
+/*-----------CATERING-----------*/
+ label{
+     font-family: futura-pt-condensed, sans-serif;
+     font-weight: 400;
+     font-size: 25px;
+     margin-left: .25rem;
+}
+ #customOrderDescrp{
+	 margin-top: 1rem;
+	 font-family: futura-pt-condensed, sans-serif;
+     font-weight: 400;
+     font-size: 20px;
+     font-style: normal;
+     display: none;
+}
+#txtPassportNumber{
+	display: block;
+}
+.qty{
+	margin-left: 1rem;
+	display: inline-block;
+}
+.defaultDnk{
+	background-color: #f6c0c4;
+	border-radius: .5rem;
+}
+.defaultDnk p{
+	margin: auto 0;
+}
+.sndwchDnk{
+	margin-bottom: 2rem;
+}
+.spclDnk{
+	margin-top: 2rem;
+}
+ .form-control{
+     font-family: futura-pt-condensed, sans-serif;
+     font-weight: 400;
+     font-style: normal;
+     margin: 1rem 0rem;
+}
+.submitBtn{	
+     font-family: futura-pt-condensed, sans-serif;
+     font-weight: 400;
+     font-style: normal;
+     margin: 1rem 0rem;
+	display: inline-block;
+	width: 10rem;
+}
+#div2{
+     font-family: futura-pt-condensed, sans-serif;
+     font-weight: 500;
+	width: 100%;
+	font-size: 20px;
+	color: #e12d3b;
+     font-style: normal;
+	display: inline-block;
+	display: none;
+  transition: all 0.5s ease-in-out
+}
+/*-----------MENU-----------*/
+ .gal {
+     -webkit-column-count: 3;
+     -moz-column-count: 3;
+     column-count: 3;
+}
+ .gal img{
+     border-radius: 2rem 0rem;
+     width: 100%;
+     padding: 7px 0;
+}
+ .img-container {
+     position: relative;
+}
+ .image {
+     opacity: 1;
+     transition: .5s ease;
+}
+ .middle {
+     text-align: center;
+     transition: .5s ease;
+     opacity: 0;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     -ms-transform: translate(-50%, -50%);
+     transform: translate(-50%, -50%);
+}
+ .middle h3{
+     font-size: 55px;
+}
+ .img-container:hover .image {
+     opacity: 0.3;
+}
+ .img-container:hover .middle {
+     opacity: 1;
+}
+ .title-divider{
+     background-color: #9ce6d8;
+     border-radius: 1rem;
+}
+/*-----------CUPCAKE MENU-----------*/
+ .menu-card{
+     margin: 0 auto;
+}
+ .card-body img{
+     border-radius: 0;
+     width: auto;
+     height: 6rem;
+}
+/*-----------CONTACT-----------*/
+.contactImg{
+	border-radius: 1rem;
+}
+li{
+	margin: 0rem 1rem .5rem 0rem;
+}
+li p{
+	display: inline;
+}
+ .fa-solid{
+	margin: 0rem .25rem .5rem 0rem;
+}
